@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./Asset/Images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!-- tailwind css  -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.16.22/dist/css/uikit.min.css" />
+
+    <!-- UIkit JS -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.16.22/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.16.22/dist/js/uikit-icons.min.js"></script>
+
+    <title>Luxury Auto</title>
+</head>
+
+
+<body>
+    <!-- Navigation -->
+    <nav class="lg:flex justify-between py-3 px-5 items-center mb-10 md:hidden sm:hidden max-[425px]:hidden">
+        <div>
+            <h1 class="text-2xl font-semibold">Luxury Auto</h1>
+        </div>
+        <div>
+            <a class="mx-2 no-underline hover:no-underline hover:text-red-500" href="#">Inventory</a>
+            <a class="mx-2 no-underline hover:no-underline hover:text-red-500" href="#">About Us</a>
+            <a class="mx-2 no-underline hover:no-underline hover:text-red-500" href="#">Contact Us</a>
+        </div>
+        <div>
+            <button class="btn1 hover:text-white hover:bg-[#ff0000] rounded-sm px-3 py-2">Sign In</button>
+            <button>Join Us</button>
+        </div>
+    </nav>
+    <!-- Banner -->
+    <div>
+        <div class="uk-position-relative uk-visible-toggle uk-light h-[60vh]" tabindex="-1"
+            uk-slideshow="animation:fade; autoplay:true; autoplay-interval:3000">
+
+            <ul class="uk-slideshow-items">
+                <li class="lg:h-[60vh]">
+                    <div
+                        class="uk-position-cover uk-animation-kenburns uk-animation-reverse uk-transform-origin-center-left">
+                        <img src="./Asset/Images/lamborghiniBanner.jpg" alt="" uk-cover>
+
+
+                    </div>
+                    <div class="uk-position-center uk-position-small uk-text-center uk-light w-[60%] mx-auto">
+                        <h2
+                            class="uk-margin-remove lg:text-5xl md:text-3xl sm:text-3xl max-[425px]:text-3xl font-semibold">
+                            Elevate Your Drive: Unleash Unparalleled Luxury
+                        </h2>
+                        <p class="uk-margin-remove lg:inline md:inline sm:hidden max-[425px]:hidden">Indulge in a world
+                            of
+                            automotive
+                            opulence
+                            like no other. Our luxury
+                            car shop is a sanctuary for connoisseurs seeking the
+                            pinnacle of refinement and performance. From iconic classics to the latest masterpieces,
+                            each vehicle in our curated
+                            collection reflects the epitome of luxury and craftsmanship. Step into a realm of timeless
+                            elegance, where every car is
+                            a work of art, meticulously chosen to provide an unforgettable driving experience. </p>
+                    </div>
+                </li>
+                <li class="lg:h-[60vh]">
+                    <div
+                        class="uk-position-cover uk-animation-kenburns uk-animation-reverse uk-transform-origin-top-right">
+                        <img src="./Asset/Images/mclarenBanner.jpg" alt="" uk-cover>
+
+                    </div>
+                    <div class="uk-position-center uk-position-small uk-text-center uk-light w-[60%] mx-auto">
+                        <h2
+                            class="uk-margin-remove lg:text-5xl md:text-3xl sm:text-3xl max-[425px]:text-3xl font-semibold">
+                            Introducing Automotive Mastery: Unravel the Extraordinary
+                        </h2>
+                        <p class="uk-margin-remove lg:inline md:inline sm:hidden max-[425px]:hidden">Welcome to a haven
+                            of automotive dreams,
+                            where passion meets
+                            precision. We take immense pride in offering a
+                            distinguished array of luxury automobiles that transcend ordinary driving. Each car in our
+                            fleet represents the epitome
+                            of automotive engineering, delivering unparalleled power, comfort, and sophistication. Our
+                            discerning team understands
+                            your desire for exclusivity, and we ensure that every vehicle surpasses the highest
+                            standards of excellence. </p>
+                    </div>
+                </li>
+                <li class="lg:h-[60vh]">
+                    <div
+                        class="uk-position-cover uk-animation-kenburns uk-animation-reverse uk-transform-origin-bottom-left">
+                        <img src="./Asset/Images/MustangBanner.jpg" alt="" uk-cover>
+
+                    </div>
+                    <div class="uk-position-center uk-position-small uk-text-center uk-light w-[60%] mx-auto">
+                        <h2
+                            class="uk-margin-remove lg:text-5xl md:text-3xl sm:text-3xl max-[425px]:text-3xl font-semibold">
+                            Unveil Perfection: Handpicked Elegance Awaits You
+                        </h2>
+                        <p class="uk-margin-remove lg:inline md:inline sm:hidden max-[425px]:hidden">Journey into the
+                            extraordinary at our luxury
+                            car emporium. Our
+                            commitment to providing the most exceptional driving
+                            experiences is evident in the curated selection of vehicles gracing our showroom. From
+                            exquisite detailing to innovative
+                            technology, every car reflects our passion for automotive perfection. </p>
+                    </div>
+                </li>
+            </ul>
+
+            <a class="uk-position-center-left uk-position-small uk-hidden-hover bg-[#ff0000] rounded-full" href="#"
+                uk-slidenav-previous uk-slideshow-item="previous"></a>
+            <a class="uk-position-center-right uk-position-small uk-hidden-hover bg-[#ff0000] rounded-full" href="#"
+                uk-slidenav-next uk-slideshow-item="next"></a>
+
+        </div>
+    </div>
+    <!-- InventorySection -->
+    <!-- InventoryHeading -->
+    <div class="lg:mt-32 md:mt-48 sm:mt-20 30 max-[425px]:mt-20">
+        <div class="text-left px-20 underline-container">
+            <h1 class="animated-underline lg:text-5xl md:text-4xl sm:text-3xl max-[425px]:text-3xl text-left mb-10">Find
+                Your <span class="underline-text">Dream
+                    Ride</span>
+                Today!</h1>
+
+        </div>
+        <!-- Inventory -->
+        <div>
+            <div class="gallery">
+                <div class="gallery-item" style="width: 100%;">
+                    <img src="./Asset/Inventory/Hellcat.jpg" alt="Image 1">
+                    <div class="overlay">
+                        <h1>Title 1</h1>
+                        <ul>
+                            <li>
+                                <p>Item 1</p>
+                            </li>
+                            <li>
+                                <p>Item 2</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="gallery-item" style="width: 50%;">
+                    <img src="./Asset/Inventory/BMWM4Coupe.jpg" alt="Image 2">
+                    <div class="overlay">
+                        <h1>Title 2</h1>
+                        <ul>
+                            <li>
+                                <p>Item 1</p>
+                            </li>
+                            <li>
+                                <p>Item 2</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="gallery-item" style="width: 50%;">
+                    <img src="./Asset/Inventory/bugatti.jpeg" alt="Image 3">
+                    <div class="overlay">
+                        <h1>Title 3</h1>
+                        <ul>
+                            <li>
+                                <p>Item 1</p>
+                            </li>
+                            <li>
+                                <p>Item 2</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="gallery-item" style="width: 33.33%;">
+                    <img src="./Asset/Inventory/ChevroletCorvetteZ06.jpg" alt="Image 3">
+                    <div class="overlay">
+                        <h1>Title 3</h1>
+                        <ul>
+                            <li>
+                                <p>Item 1</p>
+                            </li>
+                            <li>
+                                <p>Item 2</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="gallery-item" style="width: 33.33%;">
+                    <img src="./Asset/Inventory/DodgeChallenger.jpg" alt="Image 3">
+                    <div class="overlay">
+                        <h1>Title 3</h1>
+                        <ul>
+                            <li>
+                                <p>Item 1</p>
+                            </li>
+                            <li>
+                                <p>Item 2</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="gallery-item" style="width: 33.33%;">
+                    <img src="./Asset/Inventory/fordMustangGt.jpg" alt=" Image 3">
+                    <div class="overlay">
+                        <h1>Title 3</h1>
+                        <ul>
+                            <li>
+                                <p>Item 1</p>
+                            </li>
+                            <li>
+                                <p>Item 2</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="gallery-item" style="width: 33.33%;">
+                    <img src="./Asset/Inventory/McLarenSolusGT.jpg" alt="Image 3">
+                    <div class="overlay">
+                        <h1>Title 3</h1>
+                        <ul>
+                            <li>
+                                <p>Item 1</p>
+                            </li>
+                            <li>
+                                <p>Item 2</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="gallery-item" style="width: 33.33%;">
+                    <img src="./Asset/Inventory/AstonMartin.jpg" alt="Image 3">
+                    <div class="overlay">
+                        <h1>Title 3</h1>
+                        <ul>
+                            <li>
+                                <p>Item 1</p>
+                            </li>
+                            <li>
+                                <p>Item 2</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="gallery-item" style="width: 33.33%;">
+                    <img src="./Asset/Inventory/nissanGT350R.jpeg" alt="Image 3">
+                    <div class="overlay">
+                        <h1>Title 3</h1>
+                        <ul>
+                            <li>
+                                <p>Item 1</p>
+                            </li>
+                            <li>
+                                <p>Item 2</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="lg:w-[20%] md:w-[20%] sm:w-[50%] max-[425px]:w-[50%] my-20 mx-auto">
+                <button class="btn1 w-full hover:text-white hover:bg-[#ff0000] rounded-sm px-3 py-2">Browse
+                    More</button>
+
+            </div>
+
+
+        </div>
+        <!-- Service Section -->
+        <div class="text-left px-20 underline-container ">
+            <h1 class="animated-underline1 lg:text-5xl md:text-4xl sm:text-3xl max-[425px]:text-3xl text-left mb-10">
+                <span class="underline-text">Uncompromising
+                    Service:</span>
+                Elevate Your Driving Experience
+            </h1>
+
+        </div>
+
+        <div class="mt-20 bg-cover bg-center " style="background-image: url('./Asset/Images/ferrariBanner.jpg');">
+            <div
+                class="container mx-auto w-11/12 md:w-11/12 lg:w-8/12  p-2 grid gap-4 grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3">
+                <!-- Card 1 -->
+                <div class="card bg-white p-10">
+                    <div class="w-20 h-20 mx-auto">
+                        <img src="./Asset/ServiceIcons/oil.png" alt="Image 1" class="w-full h-full object-cover" />
+                    </div>
+                    <div class="p-4">
+                        <h2 class="text-xl font-semibold mb-2">Express Oil Change</h2>
+                        <ul class="mb-2">
+                            <li>Quick and efficient oil change service</li>
+                            <li>keeping your engine running smoothly</li>
+                        </ul>
+
+                    </div>
+                </div>
+
+                <!-- Card 2 (Red background) -->
+                <div class="card bg-[#ff0000] text-white p-10">
+                    <div class="w-20 h-20 mx-auto">
+                        <img src="./Asset/ServiceIcons/rotation.png" alt="Image 1" class="w-full h-full object-cover" />
+                    </div>
+                    <div class="p-4">
+                        <h1 class="text-xl text-white font-semibold mb-2">Tire Rotation & Balancing</h1>
+                        <ul class="mb-2">
+                            <li>Ensure even tire wear and optimal handling</li>
+                            <li>rotating and balancing your tires regularly</li>
+                        </ul>
+
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="card bg-white p-10">
+                    <div class="w-20 h-20 mx-auto">
+                        <img src="./Asset/ServiceIcons/scanning.png" alt="Image 1" class="w-full h-full object-cover" />
+                    </div>
+                    <div class="p-4">
+                        <h2 class="text-xl font-semibold mb-2">Diagnostic Scan & Analysis</h2>
+                        <ul class="mb-2">
+                            <li>State-of-the-art diagnostic tools</li>
+                            <li>resolve any issues with your car's electronic systems</li>
+                        </ul>
+
+                    </div>
+                </div>
+
+                <!-- Card 4 (Red background) -->
+                <div class="card bg-[#ff0000] text-white p-10">
+                    <div class="w-20 h-20 mx-auto">
+                        <img src="./Asset/ServiceIcons/book.png" alt="Image 1" class="w-full h-full object-cover" />
+                    </div>
+                    <div class="p-4">
+                        <h2 class="text-xl text-white font-semibold mb-2">Full Vehicle Detailing</h2>
+                        <ul class="mb-2">
+                            <li>Comprehensive interior and exterior cleaning</li>
+                            <li>Restore your car's shine and freshness.</li>
+                        </ul>
+
+                    </div>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="card bg-white p-10">
+                    <div class="w-20 h-20 mx-auto">
+                        <img src="./Asset/ServiceIcons//break.png" alt="Image 1" class="w-full h-full object-cover" />
+                    </div>
+                    <div class="p-4">
+                        <h2 class="text-xl font-semibold mb-2">Brake System Inspection & Repair</h2>
+                        <ul class="mb-2">
+                            <li>Thorough examination and repair</li>
+                            <li>Guarantee safe stopping.</li>
+                        </ul>
+
+                    </div>
+                </div>
+
+                <!-- Card 6 (Red background) -->
+                <div class="card bg-[#ff0000] text-white p-10">
+                    <div class="w-20 h-20 mx-auto">
+                        <img src="./Asset/ServiceIcons/air-conditioner.png" alt="Image 1"
+                            class="w-full h-full object-cover" />
+                    </div>
+                    <div class="p-4">
+                        <h2 class="text-xl text-white font-semibold mb-2">Air Conditioning Service</h2>
+                        <ul class="mb-2">
+                            <li>Diagnose and repair</li>
+                            <li>ensuring a comfortable ride in any weather.</li>
+                        </ul>
+
+                    </div>
+                </div>
+
+                <!-- Card 7 -->
+                <div class="card bg-white p-10">
+                    <div class="w-20 h-20 mx-auto">
+                        <img src="./Asset/ServiceIcons/suspension.png" alt="Image 1"
+                            class="w-full h-full object-cover" />
+                    </div>
+                    <div class="p-4">
+                        <h2 class="text-xl font-semibold mb-2">Suspension & Steering Check</h2>
+                        <ul class="mb-2">
+                            <li>Expert inspection</li>
+                            <li>steering components for a smooth and stable ride.</li>
+                        </ul>
+
+                    </div>
+                </div>
+
+                <!-- Card 8 (Red background) -->
+                <div class="card bg-[#ff0000] text-white p-10">
+                    <div class="w-20 h-20 mx-auto">
+                        <img src="./Asset/ServiceIcons/checklist.png" alt="Image 1"
+                            class="w-full h-full object-cover" />
+                    </div>
+                    <div class="p-4">
+                        <h2 class="text-xl text-white font-semibold mb-2">Car Inspection</h2>
+                        <ul class="mb-2">
+                            <li>A comprehensive inspection</li>
+                            <li>uncover any potential issues.</li>
+                        </ul>
+
+                    </div>
+                </div>
+
+                <!-- Card 9 -->
+                <div class="card bg-white p-10">
+                    <div class="w-20 h-20 mx-auto">
+                        <img src="./Asset/ServiceIcons/battery.png" alt="Image 1" class="w-full h-full object-cover" />
+                    </div>
+                    <div class="p-4">
+                        <h2 class="text-xl font-semibold mb-2">Battery Health Check & Replacement</h2>
+                        <ul class="mb-2">
+                            <li>Thorough assessment of your car's battery health</li>
+                            <li>high-quality options to ensure reliable starting power.</li>
+                        </ul>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="lg:w-[20%] md:w-[35%] sm:w-[50%] max-[425px]:w-[50%] my-20 mx-auto">
+            <button class="btn1 w-full shadow-md shadow-black py-4 ">Take an Appointment</button>
+
+        </div>
+        <!-- Customers Review Section -->
+        <div class="text-left mt-20 px-20 underline-container ">
+            <h1 class="animated-underline1 lg:text-5xl md:text-4xl sm:text-3xl max-[425px]:text-3xl text-left mb-10">
+                <span class="underline-text">Exquisite Experiences
+                    :</span>
+                What Our Customers Say
+            </h1>
+
+        </div>
+        <div class="mt-20 w-[96%] md:w-[95%] lg:w-9/12 mx-auto">
+            <div class="uk-slider-container-offset" uk-slider>
+
+                <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
+
+                    <ul class="uk-slider-items uk-child-width-1-3@m uk-child-width-1-2@s uk-grid">
+                        <li>
+                            <div class="uk-card uk-card-default h-[38em] transition-all duration-500 hover:scale-105">
+                                <div class="uk-card-media-top">
+                                    <img src="./Asset/Review/a.jpg" width="1800" height="1200" alt="">
+                                </div>
+                                <div class="uk-card-body">
+                                    <h3 class="uk-card-title">Emily's Review</h3>
+                                    <p>The sleek design caught my eye right away, and the electric blue color is just
+                                        stunning. The performance is impressive,
+                                        and I appreciate the smooth and silent ride. The spacious interior comfortably
+                                        accommodates my family, and the advanced
+                                        safety features give me peace of mind.
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- Add two more cards here -->
+                        <li>
+                            <div class="uk-card uk-card-default h-[38em] transition-all duration-500 hover:scale-105">
+                                <div class="uk-card-media-top">
+                                    <img src="./Asset/Review/b.jpg" width="1800" height="1200" alt="">
+                                </div>
+                                <div class="uk-card-body">
+                                    <h3 class="uk-card-title">James's Review</h3>
+                                    <p>I was immediately drawn to its rugged and aggressive appearance. The powerful V8
+                                        engine provides an exhilarating driving
+                                        experience, and I love the exhaust note when I hit the gas. The off-road
+                                        capabilities are outstanding, and it tackles
+                                        rough terrains like a champ.
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="uk-card uk-card-default h-[38em] transition-all duration-500 hover:scale-105">
+                                <div class="uk-card-media-top">
+                                    <img src="./Asset/Review/c.jpg" width="1800" height="1200" alt="">
+                                </div>
+                                <div class="uk-card-body">
+                                    <h3 class="uk-card-title">Sophia's Review</h3>
+                                    <p>The exterior design is graceful and sophisticated, and it turns heads wherever I
+                                        go. The driving experience is smooth
+                                        and refined, and the hybrid engine offers excellent fuel efficiency. The
+                                        interior oozes luxury with its premium
+                                        materials and attention to detail.
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="uk-card uk-card-default h-[38em] transition-all duration-500 hover:scale-105">
+                                <div class="uk-card-media-top">
+                                    <img src="./Asset/Review/d.jpg" width="1800" height="1200" alt="">
+                                </div>
+                                <div class="uk-card-body">
+                                    <h3 class="uk-card-title">Benjamin's Review</h3>
+                                    <p>Its aerodynamic design and striking curves make it look like it's always in
+                                        motion. The turbocharged engine delivers
+                                        blistering acceleration, and the precise handling lets me take corners with
+                                        confidence.
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="uk-card uk-card-default h-[38em] transition-all duration-500 hover:scale-105">
+                                <div class="uk-card-media-top ">
+                                    <img src="./Asset/Review/e.jpg" width="1800" height="1200" alt="">
+                                </div>
+                                <div class="uk-card-body">
+                                    <h3 class="uk-card-title">Olivia's Review</h3>
+                                    <p>Its rugged and modern design makes it stand out in a sea of SUVs. The
+                                        all-wheel-drive system gives me the confidence to
+                                        explore off-the-beaten-path destinations. The spacious cabin offers ample room
+                                        for my family and gear, and the panoramic
+                                        sunroof adds to the open and airy feel.
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="uk-card uk-card-default h-[38em] transition-all duration-500 hover:scale-105">
+                                <div class="uk-card-media-top">
+                                    <img src="./Asset/Review/h.jpg" width="1800" height="1200" alt="">
+                                </div>
+                                <div class="uk-card-body">
+                                    <h3 class="uk-card-title">Isabella's Review</h3>
+                                    <p>From the moment you lay eyes on it, you know you're in for a treat. The exterior
+                                        is a work of art, and the attention to
+                                        detail is evident in every curve. The powerful engine delivers a smooth and
+                                        refined driving experience, making long
+                                        journeys a pleasure.
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="uk-card uk-card-default h-[38em] transition-all duration-500 hover:scale-105">
+                                <div class="uk-card-media-top">
+                                    <img src="./Asset/Review/f.jpg" width="1800" height="1200" alt="">
+                                </div>
+                                <div class="uk-card-body">
+                                    <h3 class="uk-card-title">Alexander's Review</h3>
+                                    <p>Its compact size and agile handling make it a breeze to navigate through busy
+                                        city streets and tight parking spaces. The
+                                        electric motor is not only environmentally friendly but also saves me a lot on
+                                        fuel costs. The interior may be modest,
+                                        but it's practical and comfortable for my needs.
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <a class="uk-position-center-left uk-position-small uk-hidden-hover bg-[#ff0000] rounded-full"
+                        href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+                    <a class="uk-position-center-right uk-position-small uk-hidden-hover  bg-[#ff0000] rounded-full"
+                        href="#" uk-slidenav-next uk-slider-item="next"></a>
+
+                </div>
+
+                <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>
+
+            </div>
+
+        </div>
+        <!-- FAQ Section -->
+        <div class="text-left mt-20 px-20 underline-container ">
+            <h1 class="animated-underline1 lg:text-5xl md:text-4xl sm:text-3xl max-[425px]:text-3xl  text-left mb-10">
+                Get to know your <span class="underline-text">Luxury & Supercar</span>
+                : Frequently Asked Questions (FAQ)</h1>
+
+        </div>
+        <div
+            class="w-[98%] md:w-11/12 lg:w-9/12 mx-auto flex lg:flex-row md:flex-col sm:flex-col max-[425px]:flex-col justify-evenly text-left mt-20">
+            <div class="lg:w-[50%] md:w-full sm:w-full max-[425px]:w-full">
+                <ul uk-accordion class="w-full p-10">
+                    <li>
+                        <a class="uk-accordion-title" href="#">What types of luxury and supercars do you offer?</a>
+                        <div class="uk-accordion-content">
+                            <p>At our luxury and supercar shop, we offer an exquisite selection of high-end vehicles,
+                                including luxury sedans, sports
+                                cars, exotic supercars, and high-performance SUVs. Our collection features renowned
+                                brands known for their exceptional
+                                craftsmanship and cutting-edge technology.</p>
+                        </div>
+                    </li>
+                    <li class="uk-open">
+                        <a class="uk-accordion-title" href="#">Are all the cars at your shop brand new?</a>
+                        <div class="uk-accordion-content">
+                            <p>Yes, the majority of our inventory comprises brand new luxury and supercars. We pride
+                                ourselves on providing our
+                                customers with the latest models, ensuring they experience the peak of automotive
+                                innovation and design.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="uk-accordion-title" href="#">Can I test drive a luxury or supercar before making a
+                            purchase?
+                        </a>
+                        <div class="uk-accordion-content">
+                            <p>Absolutely! We encourage our customers to experience the thrill of driving these
+                                exceptional vehicles before making a
+                                decision. Our experienced staff will gladly arrange a test drive, allowing you to get a
+                                feel for the car's performance
+                                and features.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="uk-accordion-title" href="#">Do you offer financing options for luxury and
+                            supercars?</a>
+                        <div class="uk-accordion-content">
+                            <p>Yes, we understand that purchasing a luxury or supercar is a significant investment.
+                                That's why we provide various
+                                financing options tailored to meet your specific needs. Our finance experts will assist
+                                you in finding the best
+                                financing solution for your dream car.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="uk-accordion-title" href="#">How does the customization process work?</a>
+                        <div class="uk-accordion-content">
+                            <p>We offer a range of customization options to help you create a one-of-a-kind vehicle that
+                                reflects your individual style
+                                and preferences. Our team will work closely with you to select custom features, colors,
+                                and materials to make your
+                                luxury or supercar truly unique.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="uk-accordion-title" href="#">What warranty coverage do you offer for your
+                            vehicles?</a>
+                        <div class="uk-accordion-content">
+                            <p>All our vehicles come with manufacturer warranties to ensure your peace of mind. The
+                                duration and coverage of the
+                                warranty depend on the specific brand and model of the car. Our staff will provide you
+                                with detailed information about
+                                the warranty terms for your chosen vehicle.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="lg:w-[50%] md:w-full sm:w-full max-[425px]:w-full">
+                <div class="transition-all duration-500 hover:scale-105">
+                    <img src="./Asset/Images/FAQBanner.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <!-- Contact US Section -->
+        <div class="text-left mt-20 px-20 underline-container ">
+            <h1 class="animated-underline1 lg:text-5xl md:text-4xl sm:text-3xl max-[425px]:text-3xl  text-left mb-10">
+                <span class="underline-text">Contact
+                    Our Expert Team</span>
+                for Your Luxury & Supercar Needs
+            </h1>
+
+        </div>
+        <div
+            class="w-9/12 mx-auto mt-20 flex lg:flex-row md:flex-col-reverse sm:flex-col max-[425px]:flex-col justify-evenly">
+
+            <div
+                class="lg:w-[50%] md:w-full sm:w-full max-[425px]:w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-5">
+                <div class="bg-[#ff0000] text-white p-3 transition-all duration-300 hover:scale-105">
+                    <div class="w-[50%] p-3 mx-auto">
+                        <img class="w-full" src="./Asset/Contact/communities.png" alt="">
+                    </div>
+                    <p class="w-60 mx-auto">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod, at?</p>
+                </div>
+                <div class="bg-white p-3 transition-all duration-300 hover:scale-105">
+                    <div class="w-[50%] p-3 mx-auto">
+                        <img class="w-full" src="./Asset/Contact/customer-care.png" alt="">
+                    </div>
+                    <p class="w-60 mx-auto">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod, at?</p>
+                </div>
+                <div class="bg-white p-3 transition-all duration-300 hover:scale-105">
+                    <div class="w-[50%] p-3 mx-auto">
+                        <img class="w-full" src="./Asset/Contact/headset.png" alt="">
+                    </div>
+                    <p class="w-60 mx-auto">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod, at?</p>
+                </div>
+                <div class="p-3 bg-[#ff0000] text-white transition-all duration-300 hover:scale-105">
+                    <div class="w-[50%] p-3 mx-auto">
+                        <img class="w-full" src="./Asset/Contact/mails.png" alt="">
+                    </div>
+                    <p class="w-60 mx-auto">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod, at?</p>
+                </div>
+
+            </div>
+            <div class="lg:w-[50%] md:w-full sm:w-full max-[425px]:w-full p-10"><iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1047569.6405380806!2d2.1038609189354687!3d46.625330074081944!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47fa97c37d2ff40d%3A0xadebcc907870616f!2sLUXURY%20CAR%20AUTO!5e0!3m2!1sen!2sbd!4v1690610315190!5m2!1sen!2sbd"
+                    width="100%" height="100%" style="border: 2;  top: 0; left: 0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+        </div>
+        <!-- footerSection -->
+        <div>
+            <div class="mt-20 text-white p-20 grid lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-1 max-[425px]:grid-cols-1 gap-2"
+                style="
+                        background-image: url('./Asset/Images/footerBanner.jpg'); background-size: cover; background-position: center center;">
+                <div>
+                    <span class="text-2xl underline font-semibold">Services</span>
+                    <ul>
+                        <li><a href="#" target="_blank">Branding</a></li>
+                        <li><a href="#" target="_blank">Design</a></li>
+                        <li><a href="#" target="_blank">Design</a></li>
+                        <li><a href="#" target="_blank">Advertisement</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <span class="text-2xl underline font-semibold">Legal</span>
+                    <ul>
+                        <li><a href="#" target="_blank">Terms Of Service</a></li>
+                        <li><a href="#" target="_blank">Privacy Policy</a></li>
+                        <li><a href="#" target="_blank">Cookie Policy</a></li>
+                        <li><a href="#" target="_blank">Advertisement</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <span class="text-2xl underline font-semibold">Social</span>
+                    <ul>
+                        <li><a href="#" target="_blank">Twitter</a></li>
+                        <li><a href="#" target="_blank">Instagram</a></li>
+                        <li><a href="#" target="_blank">Facebook</a></li>
+                        <li><a href="#" target="_blank">Threads</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <span class="text-2xl underline font-semibold">Company</span>
+                    <ul>
+                        <li><a href="#" target="_blank">About Us</a></li>
+                        <li><a href="#" target="_blank">Contact Us</a></li>
+                        <li><a href="#" target="_blank">Jobs</a></li>
+                        <li><a href="#" target="_blank">Press kit</a></li>
+                    </ul>
+
+                </div>
+            </div>
+
+
+        </div>
+
+
+
+
+
+
+
+</body>
+
+</html>
