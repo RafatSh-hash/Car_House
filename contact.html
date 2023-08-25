@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./Asset/Images/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <!-- Google Fonts -->
@@ -116,7 +116,7 @@
                 </div>
             </div>
         </div>
-        <div class="w-full md:w-[40%] lg:w-[40%] bg-white p-10">
+        <div class="w-full md:w-[40%] lg:w-[40%] bg-white p-10  shadow-2xl">
             <h1 class="text-2xl md:text-3xl lg:text-3xl font-semibold text-center md:text-left lg:text-left my-5">Send A
                 Message</h1>
             <form onsubmit="alert('Thank You')">
@@ -141,10 +141,8 @@
                         class="w-full transition-all duration-300 focus:outline-none focus:ring focus:ring-red-300 p-3"
                         placeholder="Your Message Here"></textarea>
                 </div>
-                <div class="flex flex-col justify-start w-full md:w-full lg:w-[40%] mt-3">
-                    <button type="submit"
-                        class="btn1 border-2 border-red-500 hover:text-white hover:bg-[#ff0000] rounded-sm px-3 py-2">Submit
-                        Message</button>
+                <div class="lg:w-[40%] md:w-[35%] sm:w-[50%] max-[425px]:w-[50%] my-2 ">
+                    <button class="btn1 w-full shadow-md shadow-black py-2 font-semibold">Send A Message</button>
 
                 </div>
             </form>
